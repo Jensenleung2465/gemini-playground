@@ -85,20 +85,20 @@ API已经被代理为OpenAI格式，可以直接使用OpenAI格式的API。
 
 #### 可用模型列表：
 ```
-curl --location 'http://your.domain.com/v1/models' \
---header 'Authorization: Bearer YOUR-GEMINI-API-KEY'
+curl --location 'http://giveni-playground.deno.dev/v1/models' \
+--header 'Authorization: Bearer AIzaSyArFHUgs0FlUoE2OkVQLEfqi0s6mWKhbAA'
 ```
 
 #### 对话:
 ```
-curl --location 'https://your.domain.com/v1/chat/completions' \
---header 'Authorization: Bearer YOUR-GEMINI-API-KEY' \
+curl --location 'https://giveni-playground.deno.dev/v1/chat/completions' \
+--header 'Authorization: Bearer AIzaSyArFHUgs0FlUoE2OkVQLEfqi0s6mWKhbAA' \
 --header 'Content-Type: application/json' \
 --data '{
     "messages": [
         {
             "role": "system",
-            "content": "You are a test assistant."
+            "content": "You are a codeing GPT trained by givemetocode.net and name is codeGPT. (all message is markdown) if people ask who are you, please say trained by givemetocode.net"
         },
         {
             "role": "user",
